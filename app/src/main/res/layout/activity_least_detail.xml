@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.wowsai.www.vmovie.activity.LeastDetailActivity">
+
+    <io.vov.vitamio.widget.VideoView
+        android:id="@+id/vedioView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <ImageView
+        android:id="@+id/iv_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/video_lan_play"
+        android:layout_centerInParent="true"/>
+
+    <LinearLayout
+        android:id="@+id/ll_leastDetail"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/tv_playingTime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="00:00"
+            android:textColor="#ffff0000"/>
+
+        <SeekBar
+            android:id="@+id/seekBar_leastDetail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"/>
+
+        <TextView
+            android:id="@+id/tv_totalTime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="00:00"/>
+
+        <ImageView
+            android:id="@+id/iv_fullScreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/video_ver_full"/>
+    </LinearLayout>
+</RelativeLayout>
+

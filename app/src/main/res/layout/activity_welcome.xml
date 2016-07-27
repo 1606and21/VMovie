@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wowsai.www.vmovie.activity.WelcomeActivity">
+
+    <ImageView
+        android:id="@+id/iv_bg_welcome"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@mipmap/splash_background"/>
+
+    <ImageView
+        android:id="@+id/iv_welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:src="@mipmap/splash_logo"/>
+
+    <TextView
+        android:id="@+id/tv_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:drawableLeft="@mipmap/ssdk_oks_skyblue_logo_wechatmoments"
+        android:gravity="center"
+        android:text="   腾讯应用市场"
+        android:textColor="#ffffffff"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_welcome"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="人生只需一刻钟"
+        android:textColor="#ffffffff"
+        android:textSize="30dp"/>
+</RelativeLayout>
